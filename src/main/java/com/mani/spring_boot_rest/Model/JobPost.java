@@ -1,11 +1,15 @@
 package com.mani.spring_boot_rest.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
+@Entity
 public class JobPost {
+    @Id
     private int jobId;
     private String jobTitle;
     private String description;
